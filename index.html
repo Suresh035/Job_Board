@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Job Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Job Board</h1>
+
+        <!-- Search & Filter Section -->
+        <div class="controls">
+            <input type="text" id="search" placeholder="Search for jobs...">
+            <select id="category">
+                <option value="all">All Categories</option>
+                <option value="IT">IT</option>
+                <option value="Marketing">Marketing</option>
+                <option value="Finance">Finance</option>
+                <option value="HR">HR</option>
+            </select>
+        </div>
+
+        <!-- Job List -->
+        <div id="jobs-list"></div>
+
+        <!-- Add New Job Section -->
+        <div class="add-job">
+            <h2>Post a New Job</h2>
+            <input type="text" id="job-title" placeholder="Job Title">
+            <input type="text" id="job-company" placeholder="Company">
+            <select id="job-category">
+                <option value="IT">IT</option>
+                <option value="Marketing">Marketing</option>
+                <option value="Finance">Finance</option>
+                <option value="HR">HR</option>
+            </select>
+            <button id="post-job">Post Job</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
